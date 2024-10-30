@@ -1,0 +1,198 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* ... Kode CSS sebelumnya ... */
+
+.hero-section {
+    text-align: center;
+}
+
+.hero-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.caption {
+    color: #333;
+    margin-top: 10px;
+}
+
+/* ... Kode CSS setelahnya ... */
+
+
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    color: white;
+    background-color: #333;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ... Kode CSS sebelumnya ... */
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    max-width: 100px; /* Sesuaikan lebar logo sesuai kebutuhan */
+    height: auto;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    overflow: hidden; /* Untuk memastikan float tidak mengganggu layout */
+    text-align: center;
+}
+
+header h1 {
+    display: none; /* Sembunyikan teks "Web Responsif" jika menggunakan logo */
+}
+
+/* ... Kode CSS setelahnya ... */
+
+
+section {
+    padding: 30px;
+    margin: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ... Kode CSS sebelumnya ... */
+
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-item {
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.social-item img {
+    max-width: 50px; /* Sesuaikan lebar ikon sosial media sesuai kebutuhan */
+    height: auto;
+    border-radius: 50%; /* Membuat ikon menjadi lingkaran */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+/* ... Kode CSS sebelumnya ... */
+
+/* Animasi Glitch */
+@keyframes glitch {
+    0% { transform: translate(0); }
+    2% { transform: translate(-2px, 2px); }
+    4% { transform: translate(2px, -2px); }
+    6% { transform: translate(-2px, 2px); }
+    8% { transform: translate(2px, -2px); }
+    10% { transform: translate(0); }
+    100% { transform: translate(0); }
+}
+
+.social-item a:hover img {
+    animation: glitch 0.3s infinite;
+    filter: brightness(90%); /* Memberikan efek kegelapan saat glitch */
+}
+
+.social-item a:hover span {
+    color: #ff3366; /* Warna teks berubah pada hover dan glitch */
+}
+
+/* ... Kode CSS setelahnya ... */
+
+
+.social-item span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-item a:hover {
+    transform: scale(1.2); /* Efek scaling pada hover */
+    opacity: 0.8; /* Efek transparansi pada hover */
+}
+
+.social-item a:hover span {
+    color: white; /* Warna teks berubah pada hover */
+}
+
+/* ... Kode CSS setelahnya ... */
+
+
+
+
+@media only screen and (max-width: 600px) {
+    section {
+        margin: 15px;
+    }
+}
